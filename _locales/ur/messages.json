@@ -87,7 +87,7 @@
     "messageformat": "نامعلوم رابطہ"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "حذف شدہ اکاؤنٹ"
   },
   "icu:unknownContactShort": {
     "messageformat": "نامعلوم"
@@ -6704,7 +6704,7 @@
     "messageformat": "اپ ڈیٹ ڈاؤن لوڈ ہو گئی ہے"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "ایپ اسٹور پر جانے کے لیے کلک کریں"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "ایپ اسٹور پر جانے کے لیے کلک کریں"
@@ -8278,6 +8278,6 @@
     "messageformat": "• ہم نے پن کردہ چیٹس کی زیادہ سے زیادہ تعداد 4 سے بڑھا کر 10 کر دی ہے تاکہ آپ 6 اور لوگوں کو بتا سکیں کہ آپ کو ان کی باتیں کتنی پسند ہیں۔"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "اب رائے شماری انفرادی چیٹس میں بھی تخلیق کی جا سکتی ہے۔"
   }
 }

@@ -87,7 +87,7 @@
     "messageformat": "مخاطب ناشناس"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "حساب پاک‌شده"
   },
   "icu:unknownContactShort": {
     "messageformat": "ناشناخته"
@@ -6704,7 +6704,7 @@
     "messageformat": "به‌روزرسانی بارگیری شد"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "برای رفتن به App Store کلیک کنید"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "برای رفتن به App Store کلیک کنید"
@@ -8278,6 +8278,6 @@
     "messageformat": "ما همچنین حداکثر تعداد گفتگوهای سنجاق‌شده را از ۴ به ۱۰ افزایش دادیم."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "اکنون می‌توان در گفتگوهای فردی نیز نظرسنجی ساخت."
   }
 }

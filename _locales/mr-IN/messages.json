@@ -87,7 +87,7 @@
     "messageformat": "अज्ञात संपर्क"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "हटवलेले अकाऊंट"
   },
   "icu:unknownContactShort": {
     "messageformat": "अज्ञात"
@@ -6704,7 +6704,7 @@
     "messageformat": "अपडेट डाउनलोड केली"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "ॲप स्टोरवर जाण्यासाठी क्लिक करा"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "ॲप स्टोरवर जाण्यासाठी क्लिक करा"
@@ -8278,6 +8278,6 @@
     "messageformat": "आम्ही चॅट्सची पिन करता येणाऱ्या संख्या 4 वरून 10 वर नेली, त्यामुळे तुम्हाला त्यांच्याशी बोलायला किती आवडते हे आता आणखी 6 लोकांना दाखवू शकता."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "पोल आता स्वतंत्र चॅट्स मध्ये सुद्धा तयार करता येतात. तुमच्या मित्राला निर्णय घ्यायला मदत करण्यासाठी चांगले पर्याय नेमून द्या, किंवा तुमच्या क्रशला टीप पाठवण्याची मजा \"तुला मी आवडतो का? हो/नाही/कदाचित\" पोल तयार करून अनुभवा."
   }
 }

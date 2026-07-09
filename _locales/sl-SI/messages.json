@@ -87,7 +87,7 @@
     "messageformat": "Neznan stik"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Izbrisan račun"
   },
   "icu:unknownContactShort": {
     "messageformat": "Neznano"
@@ -6704,7 +6704,7 @@
     "messageformat": "Posodobitev prenesena"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Kliknite, da odprete App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Kliknite, da odprete App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Povečali smo tudi največje dovoljeno število pripetih klepetov s 4 na 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Ankete lahko zdaj ustvarite tudi v posameznih klepetih. Pripravite skrbno izbran seznam možnosti za svojega neodločnega prijatelja ali pa obudite čar listkov iz šolskih dni z anketo »Ali sem ti všeč? Da/Ne/Mogoče«."
   }
 }

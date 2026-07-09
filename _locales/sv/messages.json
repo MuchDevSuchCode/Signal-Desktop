@@ -87,7 +87,7 @@
     "messageformat": "Okänd kontakt"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Raderat konto"
   },
   "icu:unknownContactShort": {
     "messageformat": "Okänt"
@@ -6704,7 +6704,7 @@
     "messageformat": "Uppdatering nedladdad"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Klicka för att gå till App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Klicka för att gå till App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Vi har även ökat det maximala antalet fästa chattar från fyra till tio."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Omröstningar kan nu skapas även i individuella chattar."
   }
 }

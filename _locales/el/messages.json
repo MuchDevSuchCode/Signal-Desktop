@@ -87,7 +87,7 @@
     "messageformat": "Άγνωστη επαφή"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Διαγραμμένος λογαριασμός"
   },
   "icu:unknownContactShort": {
     "messageformat": "Άγνωστο"
@@ -6704,7 +6704,7 @@
     "messageformat": "Έγινε λήψη της ενημέρωσης"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Κάνε κλικ για να μεταβείς στο App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Κάνε κλικ για να μεταβείς στο App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Αυξήσαμε επίσης τον μέγιστο αριθμό καρφιτσωμένων συνομιλιών από 4 σε 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Πλέον, μπορούν να δημιουργούνται δημοσκοπήσεις και σε ατομικές συνομιλίες. Κάνε δώρο μια επιλεγμένη λίστα επιλογών στο αναποφάσιστο φιλαράκι σου ή ξαναζήσε τη μαγεία του να δίνεις ένα σημείωμα στο άτομο που σου αρέσει, δημιουργώντας μια ψηφοφορία με θέμα «Σου αρέσω; Ναι/Όχι/Ίσως»."
   }
 }

@@ -87,7 +87,7 @@
     "messageformat": "Неизвестный контакт"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Удалённая учётная запись"
   },
   "icu:unknownContactShort": {
     "messageformat": "Неизвестно"
@@ -6704,7 +6704,7 @@
     "messageformat": "Обновление загружено"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Нажмите, чтобы перейти в App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Нажмите, чтобы перейти в App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Мы также увеличили максимальное количество прикреплённых чатов с 4 до 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Опросы теперь можно создавать и в индивидуальных чатах. Предложите своему нерешительному другу тщательно подобранный список вариантов или отправьте своей пассии волшебную записку, создав опрос «Я тебе нравлюсь? Да/Нет/Может быть»."
   }
 }

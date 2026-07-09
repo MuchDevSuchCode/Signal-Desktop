@@ -87,7 +87,7 @@
     "messageformat": "ತಿಳಿದಿಲ್ಲದ ಸಂಪರ್ಕ"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ಖಾತೆಯನ್ನು ಅಳಿಸಿ"
   },
   "icu:unknownContactShort": {
     "messageformat": "ತಿಳಿದಿಲ್ಲ"
@@ -6704,7 +6704,7 @@
     "messageformat": "ಅಪ್‌ಡೇಟ್ ಡೌನ್‌ಲೋಡ್ ಆಗಿದೆ"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "ಆ್ಯಪ್ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "ಆ್ಯಪ್ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
@@ -8278,6 +8278,6 @@
     "messageformat": "ಈಗ 4 ಅಲ್ಲ 10 ಚಾಟ್‌ಗಳನ್ನು ಪಿನ್ ಮಾಡಬಹುದು. ಅಂದರೆ ಇನ್ನೂ 6 ಮಂದಿಗೆ ಅವರ ಮಾತುಗಳು ನಿಮಗಿಷ್ಟ ಎಂದು ತೋರಿಸಬಹುದು."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "ಸಮೀಕ್ಷೆಗಳನ್ನು ಈಗ ಪ್ರತ್ಯೇಕ ಚಾಟ್‌ಗಳಲ್ಲಿಯೂ ರಚಿಸಬಹುದು. ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳಲು ಕಷ್ಟಪಡುತ್ತಿರುವ ನಿಮ್ಮ ಸ್ನೇಹಿತರಿಗೆ ಕ್ಯುರೇಟ್ ಮಾಡಲಾದ ಆಯ್ಕೆಗಳ ಪಟ್ಟಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ. ಅಥವಾ ‘ನಿನಗೆ ನಾನು ಇಷ್ಟವೇ? ಹೌದು / ಇಲ್ಲ / ಬಹುಶಃ’ ಎಂಬ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸುವ ಮೂಲಕ ನೀವು ಇಷ್ಟಪಡುವವರಿಗೆ ಚೀಟಿ ಕೊಟ್ಟು ಕೇಳುತ್ತಿದ್ದ ಆ ಸಿಹಿ ಕ್ಷಣಗಳನ್ನು ಮತ್ತೆ ಅನುಭವಿಸಿ."
   }
 }

@@ -87,7 +87,7 @@
     "messageformat": "ผู้ที่ติดต่อที่ไม่รู้จัก"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "บัญชีที่ถูกลบ"
   },
   "icu:unknownContactShort": {
     "messageformat": "ไม่ทราบ"
@@ -6704,7 +6704,7 @@
     "messageformat": "ดาวน์โหลดการอัปเดตแล้ว"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "คลิกเพื่อไปยัง App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "คลิกเพื่อไปยัง App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "พร้อมเพิ่มจำนวนแชทที่คุณสามารถปักหมุดได้ จากเดิม 4 แชทเป็นสูงสุดถึง 10 แชท"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "อัปเกรดความสามารถให้คุณใช้ฟีเจอร์โพลในแชทส่วนตัวได้แล้ว"
   }
 }

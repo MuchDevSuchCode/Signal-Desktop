@@ -87,7 +87,7 @@
     "messageformat": "Liên hệ không rõ"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Tài khoản đã xóa"
   },
   "icu:unknownContactShort": {
     "messageformat": "Không rõ"
@@ -6704,7 +6704,7 @@
     "messageformat": "Đã tải Bản Cập Nhật"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Bấm để chuyển đến App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Bấm để chuyển đến App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Chúng tôi cũng đã tăng số lượng tối đa các cuộc trò chuyện được ghim từ 4 lên 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Giờ đây, bạn cũng có thể tạo cuộc hỏi ý kiến trong các cuộc trò chuyện riêng."
   }
 }

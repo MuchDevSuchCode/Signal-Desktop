@@ -87,7 +87,7 @@
     "messageformat": "अनजान कॉन्टैक्ट"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "डिलीट किया गया अकाउंट"
   },
   "icu:unknownContactShort": {
     "messageformat": "अनजान"
@@ -2895,7 +2895,7 @@
     "messageformat": "जानवर और प्रकृति"
   },
   "icu:FunPanelEmojis__SubNavCategoryLabel--FoodAndDrink": {
-    "messageformat": "खाना और पेय"
+    "messageformat": "खान-पान"
   },
   "icu:FunPanelEmojis__SubNavCategoryLabel--Activities": {
     "messageformat": "गतिविधियां"
@@ -2943,7 +2943,7 @@
     "messageformat": "जानवर और प्रकृति"
   },
   "icu:FunPanelEmojis__SectionTitle--FoodAndDrink": {
-    "messageformat": "खाना और पेय"
+    "messageformat": "खान-पान"
   },
   "icu:FunPanelEmojis__SectionTitle--TravelAndPlaces": {
     "messageformat": "सफ़र और जगहें"
@@ -6704,7 +6704,7 @@
     "messageformat": "अपडेट किया गया"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store पर जाने के लिए क्लिक करें"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store पर जाने के लिए क्लिक करें"
@@ -8278,6 +8278,6 @@
     "messageformat": "हमने पिन की गई चैट की अधिकतम संख्या को भी 4 से बढ़ाकर 10 कर दिया है, ताकि आप 6 और लोगों को दिखा सकें कि उनकी बातें आपको कितनी पसंद हैं।"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "अब अलग-अलग चैट में भी पोल बनाए जा सकते हैं। असमंजस में रहने वाले किसी दोस्त के सामने चुनिंदा विकल्पों की सूची पेश करें। “क्या मैं आपको पसंद हूं? हां/नहीं/शायद” पोल बनाकर अपने पहले प्यार को चिट्ठी थमाने के उस जादुई एहसास को दोबारा महसूस करें।"
   }
 }

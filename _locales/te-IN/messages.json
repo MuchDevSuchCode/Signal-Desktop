@@ -87,7 +87,7 @@
     "messageformat": "తెలియని పరిచయం"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "తొలగించబడిన ఖాతా"
   },
   "icu:unknownContactShort": {
     "messageformat": "తెలియని"
@@ -6704,7 +6704,7 @@
     "messageformat": "అప్‌డేట్ డౌన్‌లోడ్ చేయబడింది"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store కు వెళ్లడానికి క్లిక్ చేయండి"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store కు వెళ్లడానికి క్లిక్ చేయండి"
@@ -8278,6 +8278,6 @@
     "messageformat": "మేము పిన్ చేసిన చాట్‌ల గరిష్ట సంఖ్యను కూడా 4 నుండి 10 కి పెంచాము."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "ఇప్పుడు వ్యక్తిగత చాట్‌లలో కూడా పోల్‌లను సృష్టించవచ్చు. ఏది ఎంచుకోవాలో తేల్చుకోలేని మీ స్నేహితుడికి మీరు ఎంపిక చేసిన కొన్ని ఎంపికల జాబితాను అందించండి లేదా మీకు నచ్చిన వ్యక్తికి గమనిక పంపే పాత అనుభూతిని తిరిగి పొందడానికి “నీకు నేను ఇష్టమా? అవును/కాదు/కావచ్చు” అనే పోల్‌ను సృష్టించండి."
   }
 }

@@ -87,7 +87,7 @@
     "messageformat": "অজানা কন্ট্যাক্ট"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "মুছে ফেলা অ্যাকাউন্ট"
   },
   "icu:unknownContactShort": {
     "messageformat": "অজানা"
@@ -6704,7 +6704,7 @@
     "messageformat": "আপডেট ডাউনলোড হয়েছে"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store-এ যেতে ক্লিক করুন"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store-এ যেতে ক্লিক করুন"
@@ -8278,6 +8278,6 @@
     "messageformat": "আমরা পিন করা চ্যাটের সর্বোচ্চ সংখ্যাও 4টি থেকে বাড়িয়ে 10টি করেছি।"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "এখন থেকে ব্যক্তিগত চ্যাটেও পোল তৈরি করা যাবে।"
   }
 }

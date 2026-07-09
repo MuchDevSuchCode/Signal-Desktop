@@ -87,7 +87,7 @@
     "messageformat": "Contact inconnu"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Compte supprimé"
   },
   "icu:unknownContactShort": {
     "messageformat": "Inconnu"
@@ -3612,7 +3612,7 @@
     "messageformat": "Ceci est le seul canal de diffusion officiel de Signal"
   },
   "icu:ConversationHero--signal-official-chat-title": {
-    "messageformat": "Conversation officielle"
+    "messageformat": "Canal de diffusion officiel"
   },
   "icu:ConversationHero--signal-official-account--description": {
     "messageformat": "Le seul canal de diffusion officiel de Signal. Pour découvrir les nouveautés et notes de version."
@@ -3642,7 +3642,7 @@
     "messageformat": "Aucun groupe en commun"
   },
   "icu:no-groups-in-common-warning": {
-    "messageformat": "Aucun groupe en commun. Examinez attentivement les demandes avant de les accepter."
+    "messageformat": "Aucun groupe en commun. Examinez attentivement les invitations avant de les accepter."
   },
   "icu:acceptCall": {
     "messageformat": "Répondre à l'appel"
@@ -5353,13 +5353,13 @@
     "messageformat": "Je vous invite à rejoindre un appel Signal. Suivez ce lien pour y participer : {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
-    "messageformat": "Examinez attentivement les demandes"
+    "messageformat": "Examinez attentivement les invitations"
   },
   "icu:MessageRequestWarning__safety-tips-v2": {
     "messageformat": "Conseils de sécurité"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Examinez attentivement les demandes. Signal a trouvé un autre contact portant le même nom. <reviewRequestLink>Examiner la demande</reviewRequestLink>"
+    "messageformat": "Examinez attentivement les invitations. Signal a trouvé un autre contact portant le même nom. <reviewRequestLink>Examiner l'invitation</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} membre du groupe porte le même nom. <reviewRequestLink>Examiner</reviewRequestLink>} other {{count,number} membres du groupe portent le même nom. <reviewRequestLink>Examiner les membres</reviewRequestLink>}}"
@@ -6704,7 +6704,7 @@
     "messageformat": "Mise à jour téléchargée"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Cliquez pour accéder à l'App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Cliquez pour accéder à l'App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Le nombre maximal de conversations épinglées passe quant à lui de 4 à 10. De quoi faire 6 heureux de plus !"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Les sondages s'invitent dans les conversations individuelles. Présentez une liste d'options claires à un ami indécis, ou revivez vos années collège en demandant à votre crush \"Tu m'aimes ? Oui/Non/Peut-être\"."
   }
 }

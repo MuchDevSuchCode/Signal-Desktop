@@ -87,7 +87,7 @@
     "messageformat": "Contatto sconosciuto"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Account eliminato"
   },
   "icu:unknownContactShort": {
     "messageformat": "Sconosciuto"
@@ -6704,7 +6704,7 @@
     "messageformat": "Aggiornamento scaricato"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Clicca per andare sull'App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Clicca per andare sull'App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Abbiamo anche aumentato il numero massimo di chat che possono essere fissate da 4 a 10, così non ti perderai neanche una novità dalle chat che ti interessano di più."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Adesso puoi creare i sondaggi anche nelle chat individuali. Chiedi quello che vuoi: il prossimo film da vedere insieme, quando andare a bere una cosa fuori, un suggerimento sulle prossime vacanze… ma occhio a non spammare troppi sondaggi, mi raccomando!"
   }
 }

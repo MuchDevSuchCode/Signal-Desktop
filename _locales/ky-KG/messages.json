@@ -87,7 +87,7 @@
     "messageformat": "Белгисиз байланыш"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Өчүрүлгөн аккаунт"
   },
   "icu:unknownContactShort": {
     "messageformat": "Белгисиз"
@@ -6704,7 +6704,7 @@
     "messageformat": "Жаңы версия жүктөлүп алынды"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store'го өтүү үчүн бул жерди басыңыз"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store'го өтүү үчүн бул жерди басыңыз"
@@ -8278,6 +8278,6 @@
     "messageformat": "Ошондой эле кадала турган маектердин санын 4төн 10го көбөйтүп койдук. Эми дагы 6 адамга алардын айткан сөздөрүн канчалык баалап барктаганыңызды көрсөтө аласыз."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Эми сурамжылоолорду жеке маектерде да түзсө болот. Арсар болуп жаткан досуңузга бир нече жооптуу суроо бериңиз же „Мен сага жагамбы? Ооба/Жок/Мүмкүн“ деп суроону кабыргасынан коюп, мектептеги сүйүү каттарынын керемет көз ирмемдерин кайра сезиңиз."
   }
 }

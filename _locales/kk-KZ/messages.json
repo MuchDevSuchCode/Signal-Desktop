@@ -87,7 +87,7 @@
     "messageformat": "Белгісіз контакт"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Жойылған аккаунт"
   },
   "icu:unknownContactShort": {
     "messageformat": "Белгісіз"
@@ -6704,7 +6704,7 @@
     "messageformat": "Жаңа нұсқасы жүктеп алынды"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store-ға өту үшін басыңыз"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store-ға өту үшін басыңыз"
@@ -8278,6 +8278,6 @@
     "messageformat": "Сонымен қатар бекітілген чаттардың максималды санын 4-тен 10-ға дейін ұлғайттық, енді тағы 6 адамға олардың айтқанын қаншалықты бағалайтыныңызды көрсете аласыз."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Сауалнамаларды енді жеке чаттарда да жасауға болады. Шешім қабылдауға келгенде көп ойланатын досыңызға нұсқалары бар тізімді ұсыныңыз немесе өзіңіз ұнатып жүрген жанға \"Мені жақсы көресің бе? Иә/Жоқ/Мүмкін\" деген сауалнама жіберіңіз."
   }
 }

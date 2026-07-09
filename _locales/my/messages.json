@@ -87,7 +87,7 @@
     "messageformat": "မသိသော အဆက်အသွယ်"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ဖျက်ထားသော အကောင့်"
   },
   "icu:unknownContactShort": {
     "messageformat": "မသိရှိ"
@@ -6704,7 +6704,7 @@
     "messageformat": "အပ်ဒိတ် ဒေါင်းလုဒ်လုပ်ပြီး"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store သို့သွားရန် နှိပ်ပါ"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store သို့သွားရန် နှိပ်ပါ"
@@ -8278,6 +8278,6 @@
     "messageformat": "အများဆုံးပင်တွဲနိုင်သည့် ချက်(တ်) အရေအတွက်ကိုလည်း 4 ခုမှ 10 ခုအထိ တိုးမြှင့်လိုက်ပါပြီ။"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "ယခုအခါ တစ်ဦးချင်းချက်(တ်)များတွင်လည်း စစ်တမ်းများကို ဖန်တီးနိုင်ပါပြီ။"
   }
 }

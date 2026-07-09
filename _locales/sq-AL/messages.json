@@ -87,7 +87,7 @@
     "messageformat": "Kontakt i panjohur"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Fshij llogarinë"
   },
   "icu:unknownContactShort": {
     "messageformat": "I panjohur"
@@ -6704,7 +6704,7 @@
     "messageformat": "Përditësimi u shkarkua"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Kliko për të shkuar tek App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Kliko për të shkuar tek App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Gjithashtu e kemi rritur numrin maksimal të bisedave të fiksuara nga 4 në 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Tani mund të krijosh sondazhe edhe në bisedat individuale."
   }
 }

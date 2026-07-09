@@ -87,7 +87,7 @@
     "messageformat": "Teagmhálaí Anaithnid"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Cuntas Scriosta"
   },
   "icu:unknownContactShort": {
     "messageformat": "Anaithnid"
@@ -6704,7 +6704,7 @@
     "messageformat": "Nuashonrú Íoslódáilte"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Cliceáil le dul chuig an App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Cliceáil le dul chuig an App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Rinneamar uaslíon na gcomhráite pionnáilte a mhéadú ó 4 cinn go 10 gcinn."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Is féidir suirbhéanna a chruthú i gcomhráite aonair anois freisin."
   }
 }

@@ -87,7 +87,7 @@
     "messageformat": "അജ്ഞാത കോൺടാക്ട്"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ഇല്ലാതാക്കിയ അക്കൗണ്ട്"
   },
   "icu:unknownContactShort": {
     "messageformat": "അജ്ഞാതം"
@@ -6704,7 +6704,7 @@
     "messageformat": "അപ്ഡേറ്റ് ഡൗൺലോഡ് ചെയ്‌തു"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store-ലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യുക"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store-ലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യുക"
@@ -8278,6 +8278,6 @@
     "messageformat": "പിൻ ചെയ്ത ചാറ്റുകളുടെ പരമാവധി എണ്ണം 4-ൽ നിന്ന് 10 ആയി ഉയർത്തിയതിനാൽ അവർ പറയുന്നതിനെ നിങ്ങൾ എത്രത്തോളം ഇഷ്ടപ്പെടുന്നുവെന്ന് 6 പേരെക്കൂടി കാണിക്കാം."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "ഇനി മുതൽ വ്യക്തിഗത ചാറ്റുകളിലും പോളുകൾ സൃഷ്ടിക്കാനാകും. പെട്ടെന്ന് തീരുമാനമെടുക്കാൻ കഴിയാത്ത നിങ്ങളുടെ കൂട്ടുകാരന് മുന്നിൽ കുറച്ചു ചോയിസുകൾ നൽകുക, അല്ലെങ്കിൽ നിങ്ങളുടെ ക്രഷിന് ഒരു കുറിപ്പ് കൈമാറുന്ന പഴയകാല മാന്ത്രികത ഓർമ്മിപ്പിക്കും വിധം “നിനക്കെന്നെ ഇഷ്ടമാണോ? അതെ/അല്ല/ചിലപ്പോൾ” എന്നൊരു പോൾ സൃഷ്ടിക്കുക."
   }
 }

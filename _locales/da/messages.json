@@ -87,7 +87,7 @@
     "messageformat": "Ukendt kontakt"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Slettet konto"
   },
   "icu:unknownContactShort": {
     "messageformat": "Ukendt"
@@ -6704,7 +6704,7 @@
     "messageformat": "Opdatering downloadet"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Klik for at gå til App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Klik for at gå til App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Vi har også øget grænsen for fastgjorte chats fra 4 til 10, så du kan vise 6 ekstra personer, hvor vild du er med det, de har på hjertet."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Afstemninger kan nu også oprettes i individuelle chats. Præsenter din ubeslutsomme ven for en udvalgt liste af muligheder, eller genskab følelsen af en klassisk seddel med en “Kan du lide mig? Ja/Nej/Måske”-afstemning."
   }
 }

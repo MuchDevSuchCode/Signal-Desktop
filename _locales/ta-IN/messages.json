@@ -87,7 +87,7 @@
     "messageformat": "தெரியாத தொடர்பு"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "அழிக்கப்பட்ட கணக்கு"
   },
   "icu:unknownContactShort": {
     "messageformat": "முன் தெரிந்திராத"
@@ -6704,7 +6704,7 @@
     "messageformat": "புதுப்பிப்பு பதிவிறக்கப்பட்டது"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "ஆப் ஸ்டோருக்குச் செல்ல கிளிக் செய்யவும்"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "ஆப் ஸ்டோருக்குச் செல்ல கிளிக் செய்யவும்"
@@ -8278,6 +8278,6 @@
     "messageformat": "பின் செய்யப்பட்ட உரையாடல்களின் அதிகபட்ச எண்ணிக்கையை 4 இல் இருந்து 10 ஆக நாங்கள் உயர்த்தியுள்ளோம்."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "இப்போது தனிப்பட்ட உரையாடல்களிலும்  வாக்கெடுப்புகளை உருவாக்கலாம்."
   }
 }

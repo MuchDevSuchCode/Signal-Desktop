@@ -87,7 +87,7 @@
     "messageformat": "جهة الاتصال غير معروفة"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "حساب محذوف"
   },
   "icu:unknownContactShort": {
     "messageformat": "غير معروف"
@@ -543,7 +543,7 @@
     "messageformat": "انضم على أي حال"
   },
   "icu:debugLogExplanation": {
-    "messageformat": "‫عند النقر على زر \"إرسال\"، سوف يُنشَر السجلّ على الإنترنت لمدة 30 يومًا في عنوان URL فريد غير منشور. يمكنك حفظه محليًا أولًا."
+    "messageformat": "‫عند النقر على زر \"إرسال\"، سوف يُنشَر السجل على الإنترنت لمدة 30 يومًا في عنوان URL فريد غير منشور. يمكنك حفظه محليًا أولًا."
   },
   "icu:debugLogExplanation--close": {
     "messageformat": "سيُنشَر هذا السّجل علنًا على الانترنت حتى يتمكّن المساهمون من الاطِّلاع عليه. يمكنك تنزيله لمراجعته أو تعديله قبل إرساله."
@@ -558,7 +558,7 @@
     "messageformat": "تمَّ تحميل سجل الأخطاء. عند اتصالك بقسم الدعم، يُرجى نسخ عنوان URL في الأسفل ثم إرفاقه مع وصف للمشكلة التي لاحظتها وكذلك الخطوات التي أدَّت إلى تكرارها."
   },
   "icu:debugLogLogIsIncomplete": {
-    "messageformat": "للاطِّلاع على السجلّ بالكامل، يُرجى الضغط على \"حفظ\""
+    "messageformat": "للاطِّلاع على السجل بالكامل، يُرجى الضغط على \"حفظ\"."
   },
   "icu:debugLogCopy": {
     "messageformat": "نسخ الرابط"
@@ -1539,7 +1539,7 @@
     "messageformat": "إعادة التعيين"
   },
   "icu:linkedDevices": {
-    "messageformat": "الأجهزة المرتبطة"
+    "messageformat": "الأجهزة المُرتبِطة"
   },
   "icu:linkNewDevice": {
     "messageformat": "ربط جهاز جديد"
@@ -4074,7 +4074,7 @@
     "messageformat": "حاوِل مُجدَّدًا"
   },
   "icu:GroupV2--admin": {
-    "messageformat": "المُشرِف"
+    "messageformat": "مُشرِف"
   },
   "icu:GroupV2--only-admins": {
     "messageformat": "المُشرِفون فقط"
@@ -6704,7 +6704,7 @@
     "messageformat": "تمَّ تنزيل التحديث"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "انقر للانتقال إلى متجر App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "انقر للانتقال إلى متجر App Store"
@@ -7596,7 +7596,7 @@
     "messageformat": "لا يمكن حذف جميع روابط المكالمات. تحقّق من اتصالك بالشبكة ثم حاوِل مُجدَّدًا."
   },
   "icu:CallsTab__ClearCallHistoryError": {
-    "messageformat": "لا يمكن مسح جميع سجلّات المكالمات. تحقّق من اتصالك بالشبكة ثم حاوِل مُجدَّدًا."
+    "messageformat": "لا يمكن مسح جميع سجلات المكالمات. تحقَّق من اتصالك بالشبكة ثم حاوِل مُجدَّدًا."
   },
   "icu:CallsTab__EmptyStateText--with-icon-2": {
     "messageformat": "انقر على <newCallButtonIcon></newCallButtonIcon> لبدء مُكالمة صوتية أو مكالمة فيديو جديدة."
@@ -8278,6 +8278,6 @@
     "messageformat": "كما قمنا بزيادة الحد الأقصى لعدد الدردشات المثبتة من 4 إلى 10، حتى تتمكن من إظهار مدى تقديرك لما يقوله 6 أشخاص إضافيين."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "يُمكن إنشاء استطلاعات الرأي في الدردشات الفردية أيضًا. قدِّم قائمة مختارة بعناية من الخيارات لصديقك المُتردِّد، أو استرجِع سحر تمرير رسالة إلى المهتمين بك من خلال إنشاء استطلاع رأي بعنوان \"هل أنا أعجبك؟ نعم/لا/ربما\"."
   }
 }

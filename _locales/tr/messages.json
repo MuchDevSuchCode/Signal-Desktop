@@ -87,7 +87,7 @@
     "messageformat": "Bilinmeyen kişi"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Silinmiş Hesap"
   },
   "icu:unknownContactShort": {
     "messageformat": "Bilinmeyen"
@@ -6704,7 +6704,7 @@
     "messageformat": "Güncelleme İndirildi"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store'a gitmek için tıkla"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store'a gitmek için tıkla"
@@ -8278,6 +8278,6 @@
     "messageformat": "Ayrıca sabitlenmiş sohbetlerin maksimum sayısını 4'ten 10'a çıkardık."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Anketler artık bireysel sohbetlerde de oluşturulabiliyor. Kararsız bir arkadaşına seçenek listesi sunabilir veya hoşlandığın kişiyi \"Beni beğeniyor musun? Evet/Hayır/Belki\" şeklinde bir anketle şaşırtabilirsin."
   }
 }

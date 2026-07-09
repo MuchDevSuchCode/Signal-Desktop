@@ -87,7 +87,7 @@
     "messageformat": "Neznámy kontakt"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Vymazaný účet"
   },
   "icu:unknownContactShort": {
     "messageformat": "Neznáme"
@@ -6704,7 +6704,7 @@
     "messageformat": "Aktualizácia bola stiahnutá"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Kliknutím prejdete do App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Kliknutím prejdete do App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Zvýšili sme aj maximálny počet pripnutých četov zo 4 na 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Ankety je teraz možné vytvárať aj v jednotlivých četoch."
   }
 }

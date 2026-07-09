@@ -87,7 +87,7 @@
     "messageformat": "Contato desconhecido"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Conta excluída"
   },
   "icu:unknownContactShort": {
     "messageformat": "Desconhecido"
@@ -6704,7 +6704,7 @@
     "messageformat": "Update concluído"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Clique para abrir a App Store. "
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Clique para abrir a App Store. "
@@ -8278,6 +8278,6 @@
     "messageformat": "Também aumentamos o limite de conversas fixadas de 4 para 10. "
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Também podem ser criadas enquetes em conversas individuais. Apresente uma lista selecionada de opções para seu amigo indeciso, ou recupere a magia de mandar um recado para seu crush criando uma enquete \"Você gosta de mim? S/N/Talvez\"."
   }
 }

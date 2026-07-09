@@ -87,7 +87,7 @@
     "messageformat": "Невідомий контакт"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Видалений акаунт"
   },
   "icu:unknownContactShort": {
     "messageformat": "Невідомий користувач"
@@ -6704,7 +6704,7 @@
     "messageformat": "Оновлення завантажено"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Натисніть, щоб перейти в App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Натисніть, щоб перейти в App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Крім того, ми збільшили максимальну дозволену кількість закріплених чатів з 4 до 10. Тепер ви зможете показати ще шістьом людям, як високо ви цінуєте їхню думку."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Тепер ви можете створювати опитування і в особистих чатах. Підготуйте детальний список із різними варіантами для свого нерішучого друга або згадайте, як у школі передавали записки через весь клас, створивши опитування «Я тобі подобаюсь? Так / Ні / Можливо»."
   }
 }

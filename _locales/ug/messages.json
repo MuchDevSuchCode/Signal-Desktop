@@ -87,7 +87,7 @@
     "messageformat": "نامەلۇم ئالاقەداش"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ھېساباتنى ئۆچۈرۈش"
   },
   "icu:unknownContactShort": {
     "messageformat": "نامەلۇم"
@@ -6704,7 +6704,7 @@
     "messageformat": "يېڭىلانما چۈشۈرۈلدى"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "چېكىپ App Store غا كىرىڭ"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "چېكىپ App Store غا كىرىڭ"
@@ -8278,6 +8278,6 @@
     "messageformat": "بىز يەنە مىقلىغىلى بولىدىغان سۆھبەتلەرنىڭ ئەڭ كۆپ سانىنى 4 تىن 10 غا كۆپەيتتۇق. 8.17 نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "راي سىناشنى ھازىر يەككە پاراڭلىشىشتىمۇ ئېلىپ بارغىلى بولىدۇ. 8.18 نەشىر نۇسخىسى ئۇچۈن تەييارلاندى. قارار قىلىشقا ئىككىلىنىۋاتقان دوستىڭىزغا بىر يۈرۈش تاللاشلارنى تەقدىم قىلىڭ، ياكى «مېنى ياخشى كۆرەمسىز؟ ھەئە / ياق / بەلكىم» دېگەن راي سىناشنى قۇرۇپ، يوشۇرۇن ياخشى كۆرگەن ئادىمىڭىزگە خەت ئەۋەتىشنىڭ ھاياجانلىق تۇيغۇسىنى قايتا ھېس قىلىڭ."
   }
 }

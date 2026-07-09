@@ -87,7 +87,7 @@
     "messageformat": "Kenalan tidak diketahui"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Akaun dipadamkan"
   },
   "icu:unknownContactShort": {
     "messageformat": "Tidak diketahui"
@@ -6704,7 +6704,7 @@
     "messageformat": "Kemas Kini Dimuat Turun"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Klik untuk pergi ke App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Klik untuk pergi ke App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Kami juga telah meningkatkan bilangan maksimum sembang yang dipinkan daripada 4 kepada 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Undian kini boleh dibuat dalam sembang individu juga."
   }
 }

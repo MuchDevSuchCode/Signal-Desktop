@@ -87,7 +87,7 @@
     "messageformat": "Ukjent kontakt"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Slettet konto"
   },
   "icu:unknownContactShort": {
     "messageformat": "Ukjent"
@@ -6704,7 +6704,7 @@
     "messageformat": "Oppdateringen er lastet ned"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Trykk for å gå til App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Trykk for å gå til App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Vi har også økt grensen for festede samtaler fra 4 til 10 samtaler."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Nå kan du også lage avstemninger i en-til-en-samtaler."
   }
 }

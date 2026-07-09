@@ -87,7 +87,7 @@
     "messageformat": "未知聯絡人"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "刪除帳戶"
   },
   "icu:unknownContactShort": {
     "messageformat": "未知"
@@ -6704,7 +6704,7 @@
     "messageformat": "更新已下載"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "點擊前往 App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "點擊前往 App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "我們還將「釘選聊天」的上限從 4 個增加至 10 個，這樣你就能向另外 6 位朋友展現，你有多喜歡他們所說的話。"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "現在你可以在個人聊天中建立投票了。為你那位優柔寡斷的朋友打造一份精心設計的選項清單，或者建立「你喜歡我嗎？是／否／也許」的投票，重拾向心儀對象傳紙條的情懷。"
   }
 }

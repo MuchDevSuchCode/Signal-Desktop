@@ -87,7 +87,7 @@
     "messageformat": "અજાણ્યો સંપર્ક"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ડિલીટ કરેલું એકાઉન્ટ"
   },
   "icu:unknownContactShort": {
     "messageformat": "અજાણ્યું"
@@ -6704,7 +6704,7 @@
     "messageformat": "અપડેટ ડાઉનલોડ થઈ ગયું"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store પર જવા માટે ક્લિક કરો"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store પર જવા માટે ક્લિક કરો"
@@ -8278,6 +8278,6 @@
     "messageformat": "અમે પિન કરેલી ચેટની મહત્તમ સંખ્યા 4થી વધારીને 10 કરી છે."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "મતદાન હવે વ્યક્તિગત ચેટમાં પણ બનાવી શકાય છે."
   }
 }

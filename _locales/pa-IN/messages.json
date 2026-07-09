@@ -87,7 +87,7 @@
     "messageformat": "ਅਣਜਾਣ ਸੰਪਰਕ"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "ਮਿਟਾਇਆ ਗਿਆ ਖਾਤਾ"
   },
   "icu:unknownContactShort": {
     "messageformat": "ਅਣਜਾਣ"
@@ -6704,7 +6704,7 @@
     "messageformat": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਗਈ"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "App Store 'ਤੇ ਜਾਣ ਲਈ ਕਲਿੱਕ ਕਰੋ"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "App Store 'ਤੇ ਜਾਣ ਲਈ ਕਲਿੱਕ ਕਰੋ"
@@ -8278,6 +8278,6 @@
     "messageformat": "ਅਸੀਂ ਪਿੰਨ ਕੀਤੀਆਂ ਜਾ ਸਕਣ ਵਾਲੀਆਂ ਚੈਟਾਂ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਗਿਣਤੀ 4 ਤੋਂ ਵਧਾ ਕੇ 10 ਕਰ ਦਿੱਤੀ ਹੈ।"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "ਪੋਲ ਹੁਣ ਵਿਅਕਤੀਗਤ ਚੈਟਾਂ ਵਿੱਚ ਵੀ ਬਣਾਏ ਜਾ ਸਕਦੇ ਹਨ।"
   }
 }

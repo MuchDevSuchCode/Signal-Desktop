@@ -87,7 +87,7 @@
     "messageformat": "Unknown contact"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Burahin ang account"
   },
   "icu:unknownContactShort": {
     "messageformat": "Hindi tukoy"
@@ -6704,7 +6704,7 @@
     "messageformat": "Na-download na ang Update"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "I-click para pumunta sa App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "I-click para pumunta sa App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Dinagdagan din namin ang maximum number ng pinned chats mula 4 hanggang 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Maaari na ring gumawa ng polls sa individual chats."
   }
 }

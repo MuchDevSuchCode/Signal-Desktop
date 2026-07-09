@@ -87,7 +87,7 @@
     "messageformat": "Kontaktu ezezaguna"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Ezabatu kontua"
   },
   "icu:unknownContactShort": {
     "messageformat": "Ezezaguna"
@@ -6704,7 +6704,7 @@
     "messageformat": "Deskargatu da eguneraketa"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Egin klik aplikazio-dendara joateko"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Egin klik aplikazio-dendara joateko"
@@ -8278,6 +8278,6 @@
     "messageformat": "Halaber, ainguratutako txaten gehieneko kopurua handitu dugu, 4tik 10era."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Orain, galdeketak banako txatetan ere sor daitezke."
   }
 }

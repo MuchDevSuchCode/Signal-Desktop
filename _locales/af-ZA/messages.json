@@ -87,7 +87,7 @@
     "messageformat": "Onbekende kontak"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Geskrapte rekening"
   },
   "icu:unknownContactShort": {
     "messageformat": "Onbekend"
@@ -6704,7 +6704,7 @@
     "messageformat": "Bywerking afgelaai"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Klik om na die Toepassingswinkel toe te gaan"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Klik om na die Toepassingswinkel toe te gaan"
@@ -8278,6 +8278,6 @@
     "messageformat": "Ons het ook die maksimum getal kletse wat jy boaan die kletsstring kan plaas van vier na tien verhoog."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Meningsopnames kan nou ook in individuele kletse geskep word."
   }
 }

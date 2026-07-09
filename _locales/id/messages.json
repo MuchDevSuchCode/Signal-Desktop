@@ -87,7 +87,7 @@
     "messageformat": "Kontak tidak dikenal"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "Akun Dihapus"
   },
   "icu:unknownContactShort": {
     "messageformat": "Tidak diketahui"
@@ -6704,7 +6704,7 @@
     "messageformat": "Pembaruan Diunduh"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "Ketuk untuk membuka App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Ketuk untuk membuka App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "Kami juga meningkatkan jumlah maksimum chat yang bisa disematkan, dari 4 menjadi 10."
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "Sekarang, polling juga bisa dibuat di chat individual. Tampilkan daftar pilihan untuk teman yang selalu galau menentukan pilihan, atau hidupkan kembali sensasi mengirim catatan kepada gebetan lewat polling “Apa kamu suka aku? Ya/Tidak/Mungkin”."
   }
 }

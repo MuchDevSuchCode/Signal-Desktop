@@ -87,7 +87,7 @@
     "messageformat": "未知联系人"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "删除账户"
   },
   "icu:unknownContactShort": {
     "messageformat": "未知"
@@ -6704,7 +6704,7 @@
     "messageformat": "更新已下载完毕"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "点击前往 App Store"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "点击前往 App Store"
@@ -8278,6 +8278,6 @@
     "messageformat": "我们还将置顶聊天的最大数量从 4 个增加到了 10 个。"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "现在一对一聊天中也可以创建投票。"
   }
 }

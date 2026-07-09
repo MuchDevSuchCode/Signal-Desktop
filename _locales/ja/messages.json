@@ -87,7 +87,7 @@
     "messageformat": "不明な連絡先"
   },
   "icu:deletedAccount": {
-    "messageformat": "Deleted Account"
+    "messageformat": "消去されたアカウント"
   },
   "icu:unknownContactShort": {
     "messageformat": "不明"
@@ -6704,7 +6704,7 @@
     "messageformat": "アップデートがダウンロードされました"
   },
   "icu:DialogUpdate__upgrade-mas": {
-    "messageformat": "Click to go to the App Store"
+    "messageformat": "クリックしてApp Storeへ移動"
   },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "クリックしてApp Storeへ移動"
@@ -8278,6 +8278,6 @@
     "messageformat": "また、ピン留めできるチャットの数を4件から10件に増やしました。"
   },
   "icu:WhatsNew__8.18--0": {
-    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+    "messageformat": "個別のチャットでも投票が作成できるようになりました。"
   }
 }

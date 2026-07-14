@@ -11,6 +11,12 @@ const PLATFORM_STRINGS: { [platform: string]: string } = {
   linux: 'Linux',
 };
 
+// Fork override: report this version to remote services instead of our own
+// internal version. Set to the upstream version this fork is tracking. Leave
+// empty to report the actual appVersion (upstream behavior).
+const REPORTED_VERSION_OVERRIDE =
+  process.env.SIGNAL_REPORTED_VERSION ?? '';
+
 export function getUserAgent(
   appVersion: string,
   release = os.release()
@@ -20,7 +26,9 @@ export function getUserAgent(
   //   crash.
   const platformString = getOwn(PLATFORM_STRINGS, process.platform);
 
-  let result = `Signal-Desktop/${appVersion}`;
+  const reportedVersion = REPORTED_VERSION_OVERRIDE || appVersion;
+
+  let result = `Signal-Desktop/${reportedVersion}`;
   if (platformString) {
     result += ` ${platformString} ${release}`;
   }

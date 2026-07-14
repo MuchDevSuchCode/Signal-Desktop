@@ -175,6 +175,7 @@ export type PropsActionsType = {
   onOutgoingVideoCall: () => void;
   onSearchInConversation: () => void;
   onSelectModeEnter: () => void;
+  onDeleteAllSentMessages: () => void;
   onShowMembers: () => void;
   onViewAllMedia: () => void;
   onViewConversationDetails: () => void;
@@ -225,6 +226,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   onOutgoingVideoCall,
   onSearchInConversation,
   onSelectModeEnter,
+  onDeleteAllSentMessages,
   onShowMembers,
   onViewAllMedia,
   onViewConversationDetails,
@@ -425,6 +427,7 @@ export const ConversationHeader = memo(function ConversationHeader({
                   }}
                   onConversationUnpin={onConversationUnpin}
                   onSelectModeEnter={onSelectModeEnter}
+                  onDeleteAllSentMessages={onDeleteAllSentMessages}
                   onSetupCustomDisappearingTimeout={() => {
                     setHasCustomDisappearingTimeoutModal(true);
                   }}
@@ -613,6 +616,7 @@ function HeaderDropdownMenuContent({
   onConversationUnblock,
   onConversationUnpin,
   onSelectModeEnter,
+  onDeleteAllSentMessages,
   onSetupCustomDisappearingTimeout,
   onShowMembers,
   onViewAllMedia,
@@ -638,6 +642,7 @@ function HeaderDropdownMenuContent({
   onConversationUnblock: () => void;
   onConversationUnpin: () => void;
   onSelectModeEnter: () => void;
+  onDeleteAllSentMessages: () => void;
   onSetupCustomDisappearingTimeout: () => void;
   onShowMembers: () => void;
   onViewAllMedia: () => void;
@@ -885,6 +890,12 @@ function HeaderDropdownMenuContent({
             onSelect={onSelectModeEnter}
           >
             {i18n('icu:ConversationHeader__menu__selectMessages')}
+          </AxoDropdownMenu.Item>
+          <AxoDropdownMenu.Item
+            symbol="trash"
+            onSelect={onDeleteAllSentMessages}
+          >
+            {i18n('icu:ConversationHeader__menu__deleteAllSentMessages')}
           </AxoDropdownMenu.Item>
           <AxoDropdownMenu.Separator />
           {!conversation.markedUnread ? (
@@ -1160,31 +1171,31 @@ function ConversationSubheader(props: {
         <>
           {renderableContactSpoofingWarning.type ===
             ContactSpoofingType.DirectConversationWithSameTitle && (
-            <DirectConversationWithSameTitleWarning
-              i18n={i18n}
-              reviewConversationNameCollision={
-                props.reviewConversationNameCollision
-              }
-              onDismissDirectContactSpoofingWarning={
-                handleDismissDirectContactSpoofingWarning
-              }
-            />
-          )}
+              <DirectConversationWithSameTitleWarning
+                i18n={i18n}
+                reviewConversationNameCollision={
+                  props.reviewConversationNameCollision
+                }
+                onDismissDirectContactSpoofingWarning={
+                  handleDismissDirectContactSpoofingWarning
+                }
+              />
+            )}
           {renderableContactSpoofingWarning.type ===
             ContactSpoofingType.MultipleGroupMembersWithSameTitle && (
-            <MultipleGroupMembersWithSameTitleWarning
-              i18n={i18n}
-              conversationId={props.conversationId}
-              contactSpoofingWarning={renderableContactSpoofingWarning}
-              acknowledgeGroupMemberNameCollisions={
-                props.acknowledgeGroupMemberNameCollisions
-              }
-              reviewConversationNameCollision={
-                props.reviewConversationNameCollision
-              }
-              renderCollidingAvatars={props.renderCollidingAvatars}
-            />
-          )}
+              <MultipleGroupMembersWithSameTitleWarning
+                i18n={i18n}
+                conversationId={props.conversationId}
+                contactSpoofingWarning={renderableContactSpoofingWarning}
+                acknowledgeGroupMemberNameCollisions={
+                  props.acknowledgeGroupMemberNameCollisions
+                }
+                reviewConversationNameCollision={
+                  props.reviewConversationNameCollision
+                }
+                renderCollidingAvatars={props.renderCollidingAvatars}
+              />
+            )}
         </>
       )}
       {props.shouldShowMiniPlayer &&

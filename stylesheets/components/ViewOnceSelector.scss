@@ -1,0 +1,85 @@
+// Copyright 2025 Signal Messenger, LLC
+// SPDX-License-Identifier: AGPL-3.0-only
+
+@use '../mixins';
+@use '../variables';
+
+.ViewOnceSelector {
+  &__button {
+    @include mixins.button-reset();
+    & {
+      align-items: center;
+      border-radius: 4px;
+      display: flex;
+      height: 32px;
+      justify-content: center;
+      width: 32px;
+    }
+
+    @include mixins.keyboard-mode {
+      &:focus {
+        outline: 2px solid variables.$color-ultramarine;
+      }
+    }
+
+    & {
+      outline: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+      height: 20px;
+      width: 20px;
+
+      @include mixins.light-theme {
+        @include mixins.color-svg(
+          '../images/icons/v3/view_once/view_once.svg',
+          variables.$color-gray-75
+        );
+      }
+      @include mixins.dark-theme {
+        @include mixins.color-svg(
+          '../images/icons/v3/view_once/view_once.svg',
+          variables.$color-gray-15
+        );
+      }
+    }
+
+    &:hover {
+      @include mixins.light-theme() {
+        background-color: variables.$color-gray-05;
+      }
+
+      @include mixins.dark-theme() {
+        background-color: variables.$color-gray-65;
+      }
+    }
+
+    &--active {
+      @include mixins.light-theme() {
+        background-color: variables.$color-gray-05;
+      }
+
+      @include mixins.dark-theme() {
+        background-color: variables.$color-gray-75;
+      }
+
+      &::after {
+        @include mixins.light-theme {
+          @include mixins.color-svg(
+            '../images/icons/v3/view_once/view_once-bold.svg',
+            variables.$color-ultramarine
+          );
+        }
+        @include mixins.dark-theme {
+          @include mixins.color-svg(
+            '../images/icons/v3/view_once/view_once-bold.svg',
+            variables.$color-ultramarine-light
+          );
+        }
+      }
+    }
+  }
+}

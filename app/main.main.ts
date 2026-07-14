@@ -1,7 +1,7 @@
 // Copyright 2017 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { join, normalize, extname, dirname, basename } from 'node:path';
+import { join, normalize, extname, dirname, basename, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import * as os from 'node:os';
 import fsExtra from 'fs-extra';
@@ -2634,8 +2634,21 @@ app.on(
   }
 );
 
-app.setAsDefaultProtocolClient('sgnl');
-app.setAsDefaultProtocolClient('signalcaptcha');
+// In a packaged app, registering the protocol is enough — Windows records
+// `Signal.exe "%1"`. But for an unpackaged dev build (`electron .`), the bare
+// call registers `electron.exe "%1"`, and Electron then mistakes the incoming
+// `sgnl://...` URL for the path of the app to load (resolved against the
+// shell's working dir, e.g. system32), failing with "Cannot find module".
+// Passing execPath + the app entry point makes Windows record
+// `electron.exe "<app path>" "%1"` so the URL is delivered as an argument.
+if (process.defaultApp && process.argv.length >= 2) {
+  const appPath = resolve(process.argv[1]);
+  app.setAsDefaultProtocolClient('sgnl', process.execPath, [appPath]);
+  app.setAsDefaultProtocolClient('signalcaptcha', process.execPath, [appPath]);
+} else {
+  app.setAsDefaultProtocolClient('sgnl');
+  app.setAsDefaultProtocolClient('signalcaptcha');
+}
 
 ipc.on(
   'set-badge',

@@ -113,15 +113,15 @@ const log = createLogger('SendMessage');
 
 export type SendIdentifierData =
   | {
-      accessKey: string;
-      senderCertificate: SerializedCertificateType | null;
-      groupSendToken: null;
-    }
+    accessKey: string;
+    senderCertificate: SerializedCertificateType | null;
+    groupSendToken: null;
+  }
   | {
-      accessKey: null;
-      senderCertificate: SerializedCertificateType | null;
-      groupSendToken: GroupSendToken;
-    };
+    accessKey: null;
+    senderCertificate: SerializedCertificateType | null;
+    groupSendToken: GroupSendToken;
+  };
 
 export type SendMetadataType = {
   [serviceId: ServiceIdString]: SendIdentifierData;
@@ -404,8 +404,8 @@ class Message {
         : '';
       log.info(
         `Sending a message with ${mentionCount} mentions, ` +
-          `${placeholderCount} placeholders, ` +
-          `and ${otherRangeCount} other ranges${storyInfo}`
+        `${placeholderCount} placeholders, ` +
+        `and ${otherRangeCount} other ranges${storyInfo}`
       );
     }
     if (this.flags) {
@@ -573,7 +573,7 @@ class Message {
         quote.bodyRanges.length &&
         (!proto.requiredProtocolVersion ||
           proto.requiredProtocolVersion <
-            Proto.DataMessage.ProtocolVersion.MENTIONS)
+          Proto.DataMessage.ProtocolVersion.MENTIONS)
       ) {
         proto.requiredProtocolVersion =
           Proto.DataMessage.ProtocolVersion.MENTIONS;
@@ -721,7 +721,7 @@ export function addPniSignatureMessageToProto({
 
   log.info(
     `addPniSignatureMessageToProto(${reason}): ` +
-      `adding pni signature for ${conversation.idForLogging()}`
+    `adding pni signature for ${conversation.idForLogging()}`
   );
 
   // eslint-disable-next-line no-param-reassign
@@ -2529,13 +2529,13 @@ export class MessageSender {
     const sendLogCallback =
       serviceIds.length > 1
         ? this.makeSendLogCallback({
-            contentHint: contentHint ?? ContentHint.Implicit,
-            proto: Proto.Content.encode(contentMessage).finish(),
-            sendType: 'senderKeyDistributionMessage',
-            timestamp,
-            urgent,
-            hasPniSignatureMessage: false,
-          })
+          contentHint: contentHint ?? ContentHint.Implicit,
+          proto: Proto.Content.encode(contentMessage).finish(),
+          sendType: 'senderKeyDistributionMessage',
+          timestamp,
+          urgent,
+          hasPniSignatureMessage: false,
+        })
         : undefined;
 
     return this.sendGroupProto({

@@ -174,8 +174,8 @@ export async function sendNormalMessage(
   const saveErrors = isFinalAttempt
     ? undefined
     : (errors: Array<Error>) => {
-        messageSendErrors = errors;
-      };
+      messageSendErrors = errors;
+    };
 
   if (!shouldContinue) {
     log.info(`message ${messageId} ran out of time. Giving up on sending it`);
@@ -316,6 +316,7 @@ export async function sendNormalMessage(
         groupV2: conversation.getGroupV2Info({
           members: recipientServiceIdsWithoutMe,
         }),
+        isViewOnce,
         preview,
         profileKey,
         quote,
@@ -712,11 +713,11 @@ async function getMessageSendData({
     uploadQueue.add(async () =>
       maybeLongAttachment
         ? uploadLongMessageAttachment({
-            attachment: maybeLongAttachment,
-            log,
-            message,
-            targetTimestamp,
-          })
+          attachment: maybeLongAttachment,
+          log,
+          message,
+          targetTimestamp,
+        })
         : undefined
     ),
     uploadMessageContacts(message, uploadQueue),
@@ -776,14 +777,14 @@ async function getMessageSendData({
     storyMessage,
     storyContext: storyMessage
       ? {
-          authorAci: storySourceServiceId
-            ? normalizeAci(
-                storySourceServiceId,
-                'sendNormalMessage.storyContext.authorAci'
-              )
-            : undefined,
-          timestamp: storyMessage.get('sent_at'),
-        }
+        authorAci: storySourceServiceId
+          ? normalizeAci(
+            storySourceServiceId,
+            'sendNormalMessage.storyContext.authorAci'
+          )
+          : undefined,
+        timestamp: storyMessage.get('sent_at'),
+      }
       : undefined,
     poll: message.get('poll'),
   };
@@ -814,7 +815,7 @@ async function uploadSingleAttachment({
   strictAssert(
     oldAttachments !== undefined,
     `${logId}: Attachment was uploaded, but message doesn't ` +
-      'have attachments anymore'
+    'have attachments anymore'
   );
 
   const index = oldAttachments.indexOf(attachment);
@@ -868,7 +869,7 @@ async function uploadLongMessageAttachment({
   strictAssert(
     oldAttachment !== undefined,
     `${logId}: Attachment was uploaded, but message doesn't ` +
-      'have long message attachment anymore'
+    'have long message attachment anymore'
   );
 
   const newBodyAttachment = { ...oldAttachment, ...copyCdnFields(uploaded) };
@@ -932,9 +933,9 @@ async function uploadMessageQuote({
       id: startingQuote.id ?? undefined,
       authorAci: startingQuote.authorAci
         ? normalizeAci(
-            startingQuote.authorAci,
-            'sendNormalMessage.quote.authorAci'
-          )
+          startingQuote.authorAci,
+          'sendNormalMessage.quote.authorAci'
+        )
         : undefined,
       text: startingQuote.text,
       bodyRanges: startingQuote.bodyRanges,
@@ -991,7 +992,7 @@ async function uploadMessageQuote({
 
       strictAssert(
         attachment.thumbnail.path ===
-          loadedQuote.attachments.at(index)?.thumbnail?.path,
+        loadedQuote.attachments.at(index)?.thumbnail?.path,
         `${logId}: Quote attachment ${index} was updated from under us`
       );
 
@@ -1145,7 +1146,7 @@ async function uploadMessageSticker(
   strictAssert(
     existingSticker?.data !== undefined,
     `${logId}: Sticker was uploaded, but message doesn't ` +
-      'have a sticker anymore'
+    'have a sticker anymore'
   );
   strictAssert(
     existingSticker.data.path === startingSticker?.data?.path,
@@ -1224,7 +1225,7 @@ async function uploadMessageContacts(
 
     strictAssert(
       loaded?.avatar?.avatar != null &&
-        loaded.avatar.avatar.path === contact.avatar.avatar.path,
+      loaded.avatar.avatar.path === contact.avatar.avatar.path,
       `${logId}: Avatar has incorrect path`
     );
     const uploaded = uploadedContacts.at(index);

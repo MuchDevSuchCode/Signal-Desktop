@@ -306,13 +306,13 @@ export type ConversationTypeType = ReadonlyDeep<
 
 export type LastMessageType = ReadonlyDeep<
   | {
-      deletedForEveryone: false;
-      author?: string;
-      bodyRanges?: HydratedBodyRangesType;
-      prefix?: string;
-      status?: LastMessageStatus;
-      text: string;
-    }
+    deletedForEveryone: false;
+    author?: string;
+    bodyRanges?: HydratedBodyRangesType;
+    prefix?: string;
+    status?: LastMessageStatus;
+    text: string;
+  }
   | { deletedForEveryone: true }
 >;
 export type DraftPreviewType = ReadonlyDeep<{
@@ -447,25 +447,25 @@ export type ConversationType = ReadonlyDeep<
 
     badges: ReadonlyArray<
       | {
-          id: string;
-        }
+        id: string;
+      }
       | {
-          id: string;
-          expiresAt: number;
-          isVisible: boolean;
-        }
+        id: string;
+        expiresAt: number;
+        isVisible: boolean;
+      }
     >;
   } & (
     | {
-        type: 'direct';
-        storySendMode?: undefined;
-        acknowledgedGroupNameCollisions?: undefined;
-      }
+      type: 'direct';
+      storySendMode?: undefined;
+      acknowledgedGroupNameCollisions?: undefined;
+    }
     | {
-        type: 'group';
-        storySendMode: StorySendMode;
-        acknowledgedGroupNameCollisions: GroupNameCollisionsWithIdsByTitle;
-      }
+      type: 'group';
+      storySendMode: StorySendMode;
+      acknowledgedGroupNameCollisions: GroupNameCollisionsWithIdsByTitle;
+    }
   )
 >;
 export type ProfileDataType = ReadonlyDeep<
@@ -566,18 +566,18 @@ type DistributionVerificationData = ReadonlyDeep<{
 
 export type ConversationVerificationData = ReadonlyDeep<
   | {
-      type: ConversationVerificationState.PendingVerification;
-      serviceIdsNeedingVerification: ReadonlyArray<ServiceIdString>;
+    type: ConversationVerificationState.PendingVerification;
+    serviceIdsNeedingVerification: ReadonlyArray<ServiceIdString>;
 
-      byDistributionId?: Record<
-        StoryDistributionIdString,
-        DistributionVerificationData
-      >;
-    }
+    byDistributionId?: Record<
+      StoryDistributionIdString,
+      DistributionVerificationData
+    >;
+  }
   | {
-      type: ConversationVerificationState.VerificationCanceled;
-      canceledAt: number;
-    }
+    type: ConversationVerificationState.VerificationCanceled;
+    canceledAt: number;
+  }
 >;
 
 type VerificationDataByConversation = ReadonlyDeep<
@@ -586,29 +586,29 @@ type VerificationDataByConversation = ReadonlyDeep<
 
 type ComposerStateType = ReadonlyDeep<
   | {
-      step: ComposerStep.StartDirectConversation | ComposerStep.FindByUsername;
-      searchTerm: string;
-      uuidFetchState: UUIDFetchStateType;
-    }
+    step: ComposerStep.StartDirectConversation | ComposerStep.FindByUsername;
+    searchTerm: string;
+    uuidFetchState: UUIDFetchStateType;
+  }
   | {
-      step: ComposerStep.FindByPhoneNumber;
-      searchTerm: string;
-      uuidFetchState: UUIDFetchStateType;
-      selectedRegion: string;
-    }
+    step: ComposerStep.FindByPhoneNumber;
+    searchTerm: string;
+    uuidFetchState: UUIDFetchStateType;
+    selectedRegion: string;
+  }
   | ({
-      step: ComposerStep.ChooseGroupMembers;
-      searchTerm: string;
-      uuidFetchState: UUIDFetchStateType;
-    } & ComposerGroupCreationState)
+    step: ComposerStep.ChooseGroupMembers;
+    searchTerm: string;
+    uuidFetchState: UUIDFetchStateType;
+  } & ComposerGroupCreationState)
   | ({
-      step: ComposerStep.SetGroupMetadata;
-      isEditingAvatar: boolean;
-    } & ComposerGroupCreationState &
-      (
-        | { isCreating: false; hasError: boolean }
-        | { isCreating: true; hasError: false }
-      ))
+    step: ComposerStep.SetGroupMetadata;
+    isEditingAvatar: boolean;
+  } & ComposerGroupCreationState &
+    (
+      | { isCreating: false; hasError: boolean }
+      | { isCreating: true; hasError: false }
+    ))
 >;
 
 export type ConversationsStateType = ReadonlyDeep<{
@@ -804,9 +804,9 @@ type DiscardMessagesActionType = ReadonlyDeep<{
   type: typeof DISCARD_MESSAGES;
   payload: Readonly<
     | {
-        conversationId: string;
-        numberToKeepAtBottom: number;
-      }
+      conversationId: string;
+      numberToKeepAtBottom: number;
+    }
     | { conversationId: string; numberToKeepAtTop: number }
   >;
 }>;
@@ -1238,6 +1238,7 @@ export const actions = {
   deleteConversation,
   deleteMessages,
   deleteMessagesForEveryone,
+  deleteAllSentMessagesForEveryone,
   destroyMessages,
   discardEditMessage,
   discardMessages,
@@ -2923,7 +2924,7 @@ function verifyConversationsStoppingSend(): ThunkAction<
       getConversationIdsStoppedForVerification(state);
     log.info(
       `verifyConversationsStoppingSend: Starting with ${conversationIdsBlocked.length} blocked ` +
-        `conversations and ${serviceIdsStoppingSend.length} conversations to verify.`
+      `conversations and ${serviceIdsStoppingSend.length} conversations to verify.`
     );
 
     // Mark conversations as approved/verified as appropriate
@@ -3413,7 +3414,7 @@ function messagesReset({
     strictAssert(
       message.conversationId === conversationId,
       `messagesReset(${conversationId}): invalid message conversationId ` +
-        `${message.conversationId}`
+      `${message.conversationId}`
     );
   }
 
@@ -3437,7 +3438,7 @@ function addPreloadData(
     strictAssert(
       message.conversationId === conversationId,
       `addPreloadData(${conversationId}): invalid message conversationId ` +
-        `${message.conversationId}`
+      `${message.conversationId}`
     );
   }
 
@@ -3657,6 +3658,121 @@ function deleteMessagesForEveryone(
   };
 }
 
+function deleteAllSentMessagesForEveryone(
+  conversationId: string
+): ThunkAction<
+  void,
+  RootStateType,
+  unknown,
+  NoopActionType | ShowToastActionType
+> {
+  return async dispatch => {
+    const conversation = window.ConversationController.get(conversationId);
+    if (!conversation) {
+      log.error(
+        `deleteAllSentMessagesForEveryone: Conversation ${conversationId} not found`
+      );
+      return;
+    }
+
+    // Fetch all messages for this conversation
+    const messages = await DataReader.getOlderMessagesByConversation({
+      conversationId,
+      includeStoryReplies: false,
+      storyId: undefined,
+      limit: 10000, // Large limit to get all messages
+      receivedAt: Date.now(),
+      sentAt: Date.now(),
+    });
+
+    // Filter for outgoing messages that haven't been deleted yet
+    const DAY_MS = 24 * 60 * 60 * 1000;
+    const now = Date.now();
+    const deletableOutgoingMessages = messages.filter(
+      msg =>
+        msg.type === 'outgoing' &&
+        !msg.deletedForEveryone &&
+        now - msg.sent_at < DAY_MS
+    );
+
+    if (deletableOutgoingMessages.length === 0) {
+      log.info(
+        'deleteAllSentMessagesForEveryone: No deletable outgoing messages found'
+      );
+      dispatch({
+        type: SHOW_TOAST,
+        payload: {
+          toastType: ToastType.Error,
+          parameters: {
+            message: 'No messages to delete',
+          },
+        },
+      });
+      return;
+    }
+
+    log.info(
+      `deleteAllSentMessagesForEveryone: Deleting ${deletableOutgoingMessages.length} messages`
+    );
+
+    // Process in batches of 30 to respect rate limits
+    const BATCH_SIZE = 30;
+    let hasError = false;
+    let deletedCount = 0;
+
+    for (
+      let i = 0;
+      i < deletableOutgoingMessages.length;
+      i += BATCH_SIZE
+    ) {
+      const batch = deletableOutgoingMessages.slice(i, i + BATCH_SIZE);
+
+      // eslint-disable-next-line no-await-in-loop
+      await Promise.all(
+        batch.map(async msg => {
+          try {
+            await sendDeleteForEveryoneMessage(conversation.attributes, {
+              id: msg.id,
+              timestamp: msg.sent_at,
+            });
+            deletedCount += 1;
+          } catch (error) {
+            hasError = true;
+            log.error(
+              'deleteAllSentMessagesForEveryone: Error deleting message',
+              Errors.toLogFormat(error),
+              msg.id
+            );
+          }
+        })
+      );
+
+      // Small delay between batches to avoid overwhelming the server
+      if (i + BATCH_SIZE < deletableOutgoingMessages.length) {
+        // eslint-disable-next-line no-await-in-loop
+        await new Promise(resolve => setTimeout(resolve, 500));
+      }
+    }
+
+    if (hasError) {
+      dispatch({
+        type: SHOW_TOAST,
+        payload: {
+          toastType: ToastType.DeleteForEveryoneFailed,
+        },
+      });
+    } else {
+      log.info(
+        `deleteAllSentMessagesForEveryone: Successfully deleted ${deletedCount} messages`
+      );
+      dispatch({
+        type: 'NOOP',
+        payload: null,
+      });
+    }
+  };
+}
+
 function approvePendingMembershipFromGroupV2(
   conversationId: string,
   memberId: string
@@ -3700,7 +3816,7 @@ function approvePendingMembershipFromGroupV2(
           if (!isMemberRequestingToJoin(conversation.attributes, serviceId)) {
             log.warn(
               `approvePendingMembershipFromGroupV2/${logId}: ${serviceId} is not requesting ` +
-                'to join the group. Returning early.'
+              'to join the group. Returning early.'
             );
             return undefined;
           }
@@ -3959,12 +4075,12 @@ function blockAndReportSpam(
                 messageRequestEnum.BLOCK_AND_SPAM
               ),
               conversationForSpam != null &&
-                addReportSpamJob({
-                  conversation: conversationForSpam,
-                  getMessageServerGuidsForSpam:
-                    DataReader.getMessageServerGuidsForSpam,
-                  jobQueue: reportSpamJobQueue,
-                }),
+              addReportSpamJob({
+                conversation: conversationForSpam,
+                getMessageServerGuidsForSpam:
+                  DataReader.getMessageServerGuidsForSpam,
+                jobQueue: reportSpamJobQueue,
+              }),
             ]);
 
             dispatch({
@@ -5452,12 +5568,12 @@ function getVerificationDataForConversation({
           : untrustedServiceIds,
         ...(distributionId
           ? {
-              byDistributionId: {
-                [distributionId]: {
-                  serviceIdsNeedingVerification: untrustedServiceIds,
-                },
+            byDistributionId: {
+              [distributionId]: {
+                serviceIdsNeedingVerification: untrustedServiceIds,
               },
-            }
+            },
+          }
           : undefined),
       },
     };
@@ -5479,13 +5595,13 @@ function getVerificationDataForConversation({
       ...(distributionId ? undefined : { serviceIdsNeedingVerification }),
       ...(distributionId
         ? {
-            byDistributionId: {
-              ...existing.byDistributionId,
-              [distributionId]: {
-                serviceIdsNeedingVerification,
-              },
+          byDistributionId: {
+            ...existing.byDistributionId,
+            [distributionId]: {
+              serviceIdsNeedingVerification,
             },
-          }
+          },
+        }
         : undefined),
     },
   };
@@ -5691,10 +5807,10 @@ function updateMessageLookup(
     preloadData: undefined,
     ...(state.selectedConversationId === conversationId
       ? {
-          targetedMessage: scrollToMessageId,
-          targetedMessageCounter: state.targetedMessageCounter + 1,
-          targetedMessageSource: TargetedMessageSource.Reset,
-        }
+        targetedMessage: scrollToMessageId,
+        targetedMessageCounter: state.targetedMessageCounter + 1,
+        targetedMessageSource: TargetedMessageSource.Reset,
+      }
       : {}),
     messagesLookup: {
       ...messagesLookup,
@@ -6451,10 +6567,10 @@ export function reducer(
       messagesByConversation: !wasDeletedForEveryone
         ? state.messagesByConversation
         : maybeDropMessageIdFromPinnedMessages(
-            state.messagesByConversation,
-            conversationId,
-            id
-          ),
+          state.messagesByConversation,
+          conversationId,
+          id
+        ),
     };
   }
 
@@ -6582,9 +6698,9 @@ export function reducer(
     const nextLastCenterMessageByConversation: LastCenterMessageByConversationType =
       messageId
         ? {
-            ...lastCenterMessageByConversation,
-            [conversationId]: messageId,
-          }
+          ...lastCenterMessageByConversation,
+          [conversationId]: messageId,
+        }
         : omit(lastCenterMessageByConversation, conversationId);
 
     return {
@@ -7057,7 +7173,7 @@ export function reducer(
 
     const poppedPanel =
       state.targetedConversationPanels.stack[
-        state.targetedConversationPanels.watermark
+      state.targetedConversationPanels.watermark
       ];
 
     if (!poppedPanel) {
@@ -7444,9 +7560,9 @@ export function reducer(
         ...composer,
         uuidFetchState: isFetching
           ? {
-              ...composer.uuidFetchState,
-              [identifier]: isFetching,
-            }
+            ...composer.uuidFetchState,
+            [identifier]: isFetching,
+          }
           : omit(uuidFetchState, identifier),
       },
     };
@@ -7751,19 +7867,19 @@ export function reducer(
         state.selectedConversationId !== conversationId
           ? state.messagesLookup
           : {
-              ...state.messagesLookup,
-              ...extraMessagesLookup,
-            },
+            ...state.messagesLookup,
+            ...extraMessagesLookup,
+          },
       messagesByConversation:
         state.messagesByConversation[conversationId] == null
           ? state.messagesByConversation
           : {
-              ...state.messagesByConversation,
-              [conversationId]: {
-                ...state.messagesByConversation[conversationId],
-                pinnedMessages,
-              },
+            ...state.messagesByConversation,
+            [conversationId]: {
+              ...state.messagesByConversation[conversationId],
+              pinnedMessages,
             },
+          },
     };
   }
 

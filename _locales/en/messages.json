@@ -527,6 +527,10 @@
     "messageformat": "Select messages",
     "description": "Shown in menu for conversation, allows the user to start selecting multiple messages in the conversation"
   },
+  "icu:ConversationHeader__menu__deleteAllSentMessages": {
+    "messageformat": "Delete all messages",
+    "description": "Shown in menu for conversation, allows the user to delete all messages they sent in the conversation for everyone"
+  },
   "icu:ConversationHeader__MenuItem--Accept": {
     "messageformat": "Accept",
     "description": "Shown in menu for conversation, allows the user to accept a message request"
@@ -7067,6 +7071,18 @@
   "icu:MediaQualitySelector--high-quality-description": {
     "messageformat": "Slower, more data",
     "description": "Description of high quality selector"
+  },
+  "icu:ViewOnceSelector--button": {
+    "messageformat": "View once",
+    "description": "aria-label for the view once selector button"
+  },
+  "icu:ViewOnceSelector--tooltip-enabled": {
+    "messageformat": "Media can only be viewed once",
+    "description": "Tooltip when view once is enabled"
+  },
+  "icu:ViewOnceSelector--tooltip-disabled": {
+    "messageformat": "Make media viewable only once",
+    "description": "Tooltip when view once is disabled"
   },
   "icu:MessageDetailsHeader--Failed": {
     "messageformat": "Not sent",

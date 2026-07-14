@@ -153,6 +153,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
     blockConversation,
     reportSpam,
     deleteConversation,
+    deleteAllSentMessagesForEveryone,
     acknowledgeGroupMemberNameCollisions,
     reviewConversationNameCollision,
   } = useConversationsActions();
@@ -268,6 +269,10 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
     toggleSelectMode(true);
   }, [toggleSelectMode]);
 
+  const onDeleteAllSentMessages = useCallback(() => {
+    deleteAllSentMessagesForEveryone(conversation.id);
+  }, [deleteAllSentMessagesForEveryone, conversation.id]);
+
   const onShowMembers = useCallback(() => {
     pushPanelForConversation({ type: PanelType.GroupV1Members });
   }, [pushPanelForConversation]);
@@ -334,6 +339,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
       onOutgoingVideoCall={onOutgoingVideoCall}
       onSearchInConversation={onSearchInConversation}
       onSelectModeEnter={onSelectModeEnter}
+      onDeleteAllSentMessages={onDeleteAllSentMessages}
       onShowMembers={onShowMembers}
       onViewConversationDetails={onViewConversationDetails}
       onViewAllMedia={onViewAllMedia}

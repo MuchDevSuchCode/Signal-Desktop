@@ -32,6 +32,7 @@ import type {
   InMemoryAttachmentDraftType,
 } from '../types/Attachment.std.js';
 import { isImageAttachment, isVoiceMessage } from '../util/Attachment.std.js';
+import { isVideo } from '../types/MIME.std.js';
 import type { AciString } from '../types/ServiceId.std.js';
 import { AudioCapture } from './conversation/AudioCapture.dom.js';
 import { CompositionUpload } from './CompositionUpload.dom.js';
@@ -47,6 +48,7 @@ import { isSameLinkPreview } from '../types/message/LinkPreviews.std.js';
 
 import { MandatoryProfileSharingActions } from './conversation/MandatoryProfileSharingActions.dom.js';
 import { MediaQualitySelector } from './MediaQualitySelector.dom.js';
+import { ViewOnceSelector } from './ViewOnceSelector.dom.js';
 import type { Props as QuoteProps } from './conversation/Quote.dom.js';
 import { Quote } from './conversation/Quote.dom.js';
 import {
@@ -341,6 +343,7 @@ export const CompositionArea = memo(function CompositionArea({
     AttachmentDraftType | undefined
   >();
   const [isPollModalOpen, setIsPollModalOpen] = useState(false);
+  const [isViewOnce, setIsViewOnce] = useState(false);
   const inputApiRef = useRef<InputApi | undefined>();
   const fileInputRef = useRef<null | HTMLInputElement>(null);
   const photoVideoInputRef = useRef<null | HTMLInputElement>(null);
@@ -361,7 +364,7 @@ export const CompositionArea = memo(function CompositionArea({
     // Quote of edited message changed
     (draftEditMessage != null &&
       dropNull(draftEditMessage.quote?.messageId) !==
-        dropNull(quotedMessageId)) ||
+      dropNull(quotedMessageId)) ||
     // Link preview of edited message changed
     (draftEditMessage != null &&
       !isSameLinkPreview(linkPreviewResult, draftEditMessage?.preview)) ||
@@ -398,7 +401,9 @@ export const CompositionArea = memo(function CompositionArea({
           bodyRanges,
           message,
           timestamp,
+          isViewOnce,
         });
+        setIsViewOnce(false);
       }
       setLarge(false);
 
@@ -408,6 +413,7 @@ export const CompositionArea = memo(function CompositionArea({
       conversationId,
       canSend,
       draftAttachments,
+      isViewOnce,
       editedMessageId,
       quotedMessageSentAt,
       quotedMessageAuthorAci,
@@ -576,6 +582,9 @@ export const CompositionArea = memo(function CompositionArea({
   const shouldShowMicrophone = !large && isComposerEmpty;
 
   const showMediaQualitySelector = draftAttachments.some(isImageAttachment);
+  const showViewOnceSelector = draftAttachments.some(
+    attachment => isImageAttachment(attachment) || isVideo(attachment.contentType)
+  );
 
   const [funPickerOpen, setFunPickerOpen] = useState(false);
 
@@ -696,6 +705,16 @@ export const CompositionArea = memo(function CompositionArea({
           <FunPickerButton i18n={i18n} />
         </FunPicker>
       </div>
+      {showViewOnceSelector ? (
+        <div className="CompositionArea__button-cell">
+          <ViewOnceSelector
+            conversationId={conversationId}
+            i18n={i18n}
+            isViewOnce={isViewOnce}
+            onSelectViewOnce={(_id, value) => setIsViewOnce(value)}
+          />
+        </div>
+      ) : null}
       {showMediaQualitySelector ? (
         <div className="CompositionArea__button-cell">
           <MediaQualitySelector

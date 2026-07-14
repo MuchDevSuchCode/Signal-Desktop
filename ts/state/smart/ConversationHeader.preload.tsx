@@ -149,6 +149,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
     blockConversation,
     reportSpam,
     deleteConversation,
+    deleteAllSentMessagesForEveryone,
     acknowledgeGroupMemberNameCollisions,
     reviewConversationNameCollision,
   } = useConversationsActions();
@@ -210,6 +211,10 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
   const onConversationDeleteMessages = useCallback(() => {
     destroyMessages(conversation.id);
   }, [destroyMessages, conversation.id]);
+
+  const onDeleteAllSentMessages = useCallback(() => {
+    deleteAllSentMessagesForEveryone(conversation.id);
+  }, [deleteAllSentMessagesForEveryone, conversation.id]);
 
   const onConversationDisappearingMessagesChange = useCallback(
     (seconds: DurationInSeconds) => {
@@ -311,6 +316,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
       onConversationBlockAndReportSpam={onConversationBlockAndReportSpam}
       onConversationDelete={onConversationDelete}
       onConversationDeleteMessages={onConversationDeleteMessages}
+      onDeleteAllSentMessages={onDeleteAllSentMessages}
       onConversationDisappearingMessagesChange={
         onConversationDisappearingMessagesChange
       }

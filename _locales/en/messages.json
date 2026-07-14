@@ -539,6 +539,22 @@
     "messageformat": "Select messages",
     "description": "Shown in menu for conversation, allows the user to start selecting multiple messages in the conversation"
   },
+  "icu:ConversationHeader__menu__deleteAllSentMessages": {
+    "messageformat": "Delete all for everyone",
+    "description": "Shown in menu for conversation, deletes for everyone all messages the user sent in the conversation that are still within the delete-for-everyone window"
+  },
+  "icu:ConversationHeader__DeleteAllSentConfirmation__title": {
+    "messageformat": "Delete all for everyone?",
+    "description": "Title of the confirmation dialog shown before deleting all of the user's recent sent messages for everyone"
+  },
+  "icu:ConversationHeader__DeleteAllSentConfirmation__description": {
+    "messageformat": "This deletes every message you sent in this chat that can still be deleted for everyone. This can't be undone.",
+    "description": "Body of the confirmation dialog shown before deleting all of the user's recent sent messages for everyone"
+  },
+  "icu:ConversationHeader__DeleteAllSentConfirmation__confirmButton": {
+    "messageformat": "Delete all for everyone",
+    "description": "Confirm button for the dialog shown before deleting all of the user's recent sent messages for everyone"
+  },
   "icu:ConversationHeader__MenuItem--Accept": {
     "messageformat": "Accept",
     "description": "Shown in menu for conversation, allows the user to accept a message request"

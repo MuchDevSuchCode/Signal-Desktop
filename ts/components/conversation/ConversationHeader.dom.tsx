@@ -160,6 +160,7 @@ export type PropsActionsType = {
   onConversationBlockAndReportSpam: () => void;
   onConversationDelete: () => void;
   onConversationDeleteMessages: () => void;
+  onDeleteAllSentMessages: () => void;
   onConversationDisappearingMessagesChange: (
     seconds: DurationInSeconds
   ) => void;
@@ -211,6 +212,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   onConversationBlockAndReportSpam,
   onConversationDelete,
   onConversationDeleteMessages,
+  onDeleteAllSentMessages,
   onConversationDisappearingMessagesChange,
   onConversationLeaveGroup,
   onConversationMarkUnread,
@@ -248,6 +250,8 @@ export const ConversationHeader = memo(function ConversationHeader({
     setHasCustomDisappearingTimeoutModal,
   ] = useState(false);
   const [hasDeleteMessagesConfirmation, setHasDeleteMessagesConfirmation] =
+    useState(false);
+  const [hasDeleteAllSentConfirmation, setHasDeleteAllSentConfirmation] =
     useState(false);
   const [hasLeaveGroupConfirmation, setHasLeaveGroupConfirmation] =
     useState(false);
@@ -290,6 +294,18 @@ export const ConversationHeader = memo(function ConversationHeader({
           }}
           onClose={() => {
             setHasDeleteMessagesConfirmation(false);
+          }}
+        />
+      )}
+      {hasDeleteAllSentConfirmation && (
+        <DeleteAllSentConfirmationDialog
+          i18n={i18n}
+          onDeleteAllSent={() => {
+            setHasDeleteAllSentConfirmation(false);
+            onDeleteAllSentMessages();
+          }}
+          onClose={() => {
+            setHasDeleteAllSentConfirmation(false);
           }}
         />
       )}
@@ -408,6 +424,9 @@ export const ConversationHeader = memo(function ConversationHeader({
                   }}
                   onConversationDeleteMessages={() => {
                     setHasDeleteMessagesConfirmation(true);
+                  }}
+                  onDeleteAllSentMessages={() => {
+                    setHasDeleteAllSentConfirmation(true);
                   }}
                   onConversationLeaveGroup={() => {
                     if (cannotLeaveBecauseYouAreLastAdmin) {
@@ -618,6 +637,7 @@ function HeaderDropdownMenuContent({
   onConversationBlock,
   onConversationDelete,
   onConversationDeleteMessages,
+  onDeleteAllSentMessages,
   onConversationLeaveGroup,
   onConversationMarkUnread,
   onConversationPin,
@@ -644,6 +664,7 @@ function HeaderDropdownMenuContent({
   onConversationBlock: () => void;
   onConversationDelete: () => void;
   onConversationDeleteMessages: () => void;
+  onDeleteAllSentMessages: () => void;
   onConversationLeaveGroup: () => void;
   onConversationMarkUnread: () => void;
   onConversationPin: () => void;
@@ -872,6 +893,12 @@ function HeaderDropdownMenuContent({
           >
             {i18n('icu:ConversationHeader__menu__selectMessages')}
           </AxoDropdownMenu.Item>
+          <AxoDropdownMenu.Item
+            symbol="trash"
+            onSelect={onDeleteAllSentMessages}
+          >
+            {i18n('icu:ConversationHeader__menu__deleteAllSentMessages')}
+          </AxoDropdownMenu.Item>
           <AxoDropdownMenu.Separator />
           {!conversation.markedUnread ? (
             <AxoDropdownMenu.Item
@@ -1095,6 +1122,34 @@ function LeaveGroupConfirmationDialog({
         disabled={cannotLeaveBecauseYouAreLastAdmin}
       >
         {i18n('icu:ConversationHeader__LeaveGroupConfirmation__confirmButton')}
+      </AxoConfirmDialog.Action>
+    </AxoConfirmDialog.Root>
+  );
+}
+
+function DeleteAllSentConfirmationDialog({
+  i18n,
+  onDeleteAllSent,
+  onClose,
+}: {
+  i18n: LocalizerType;
+  onDeleteAllSent: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <AxoConfirmDialog.Root
+      open
+      onOpenChange={onClose}
+      title={i18n('icu:ConversationHeader__DeleteAllSentConfirmation__title')}
+      description={i18n(
+        'icu:ConversationHeader__DeleteAllSentConfirmation__description'
+      )}
+    >
+      <AxoConfirmDialog.Cancel />
+      <AxoConfirmDialog.Action variant="destructive" onClick={onDeleteAllSent}>
+        {i18n(
+          'icu:ConversationHeader__DeleteAllSentConfirmation__confirmButton'
+        )}
       </AxoConfirmDialog.Action>
     </AxoConfirmDialog.Root>
   );

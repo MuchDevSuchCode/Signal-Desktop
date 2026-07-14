@@ -143,6 +143,7 @@ import {
 } from '../selectors/message.preload.ts';
 import { getActiveCall, getActiveCallState } from '../selectors/calling.std.ts';
 import { sendDeleteForEveryoneMessage } from '../../util/sendDeleteForEveryoneMessage.preload.ts';
+import { canSendDeleteForEveryone } from '../../util/canDeleteForEveryone.preload.ts';
 import type { ShowToastActionType } from './toast.preload.ts';
 import { SHOW_TOAST } from './toast.preload.ts';
 import { ToastType } from '../../types/Toast.dom.tsx';
@@ -1185,6 +1186,7 @@ export const actions = {
   deleteConversation,
   deleteMessages,
   deleteMessagesForEveryone,
+  deleteAllSentMessagesForEveryone,
   destroyMessages,
   discardEditMessage,
   discardMessages,
@@ -3613,6 +3615,103 @@ function deleteMessagesForEveryone(
       });
     } else {
       dispatch(noopAction('deleteMessagesForEveryone'));
+    }
+  };
+}
+
+// Newest messages we scan when deleting a whole conversation for everyone. Only
+// messages within the delete-for-everyone window are eligible anyway, so this
+// bounds the work; if a conversation exceeds it we log rather than silently cap.
+const DELETE_ALL_SCAN_LIMIT = 2000;
+
+function deleteAllSentMessagesForEveryone(
+  conversationId: string
+): ThunkAction<
+  void,
+  RootStateType,
+  unknown,
+  NoopActionType | ShowToastActionType
+> {
+  return async dispatch => {
+    const conversation = window.ConversationController.get(conversationId);
+    if (!conversation) {
+      log.error(
+        `deleteAllSentMessagesForEveryone: Conversation ${conversationId} not found`
+      );
+      return;
+    }
+
+    const ourAci = itemStorage.user.getCheckedAci();
+    const isDeleterGroupAdmin = conversation.areWeAdmin();
+
+    const messages = await DataReader.getOlderMessagesByConversation({
+      conversationId,
+      includeStoryReplies: true,
+      storyId: undefined,
+      limit: DELETE_ALL_SCAN_LIMIT,
+      receivedAt: Number.MAX_SAFE_INTEGER,
+      sentAt: Number.MAX_SAFE_INTEGER,
+    });
+
+    if (messages.length === DELETE_ALL_SCAN_LIMIT) {
+      log.warn(
+        `deleteAllSentMessagesForEveryone: reached scan limit of ` +
+          `${DELETE_ALL_SCAN_LIMIT}; older eligible messages may be skipped`
+      );
+    }
+
+    // Only keep messages we're actually allowed to delete for everyone (our own
+    // recent messages, plus others' messages if we're a group admin). This is
+    // the same gate sendDeleteForEveryoneMessage enforces, so we avoid queuing
+    // sends that would fail.
+    const deletableMessages = messages.filter(
+      message =>
+        canSendDeleteForEveryone({
+          targetMessage: message,
+          targetConversation: conversation.attributes,
+          ourAci,
+          isDeleterGroupAdmin,
+        }).ok
+    );
+
+    if (deletableMessages.length === 0) {
+      log.info('deleteAllSentMessagesForEveryone: nothing to delete');
+      dispatch(noopAction('deleteAllSentMessagesForEveryone'));
+      return;
+    }
+
+    log.info(
+      `deleteAllSentMessagesForEveryone: deleting ${deletableMessages.length} messages`
+    );
+
+    let hasError = false;
+    await Promise.all(
+      deletableMessages.map(async message => {
+        try {
+          await sendDeleteForEveryoneMessage(conversation.attributes, {
+            id: message.id,
+            timestamp: getMessageSentTimestamp(message, { log }),
+          });
+        } catch (error) {
+          hasError = true;
+          log.error(
+            'deleteAllSentMessagesForEveryone: error queuing delete-for-everyone job',
+            Errors.toLogFormat(error),
+            message.id
+          );
+        }
+      })
+    );
+
+    if (hasError) {
+      dispatch({
+        type: SHOW_TOAST,
+        payload: {
+          toastType: ToastType.DeleteForEveryoneFailed,
+        },
+      });
+    } else {
+      dispatch(noopAction('deleteAllSentMessagesForEveryone'));
     }
   };
 }
